@@ -1,0 +1,107 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.gamesLogo {
+  max-width: 80%;
+  margin-top: 1rem;
+}
+
+.thumbnailImage {
+  animation: fadeIn ease-in 0.4s;
+}
+.thumbnailLimiter {
+  max-height: 80%;
+}
+
+.battleshipPlay{
+  /* border: solid 2px rgb(96,165,250); */
+  border: solid 2px white;
+  margin: 1rem;
+}
+
+.battleshipPlay:hover {
+  border: solid 2px palevioletred;
+}
+.battleshipPlay:active {
+  background-color: paleturquoise;
+}
+
+.battleshipLandingImage {
+  width: 100%;
+  max-width: 384px;
+}
+
+.workThumbnail {
+  max-width: 550px;
+  max-height: 330px;
+  position: relative;
+  height: 60vw;
+}
+.workThumbnailMd {
+  height: 30vw;
+}
+.workGithubLogo {
+  width: 100px;
+}
+.workGithubLogo:hover {
+  transform: scale(1.08);
+}
+.cycleRight {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  top: 46.5%;
+  left: 90%;
+  cursor: pointer;
+  user-select: none;
+}
+.cycleLeft {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  top: 46.5%;
+  left: 5%;
+  cursor: pointer;
+  user-select: none;
+  transform: rotate(180deg);
+}
+.workImage {
+  border: solid 1px black;
+  animation: fadeIn ease-in 0.8s;
+}
+.workTextSizeStandardizer {
+  WIDTH: 37vw;
+}
+
+.workLogo {
+  max-width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .workImage {
+    border-left: none;
+    border-right: none;
+  }
+}
+@keyframes slidein {
+  from {
+    left: -50%;
+    background-color: white;
+  }
+  to {
+    left: 0;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(124,233,255,1) 50%, rgba(197,245,255,1) 100%);
+
+  }
+}

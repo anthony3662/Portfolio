@@ -1,0 +1,290 @@
+
+#canvas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  border: solid 2px black;
+  overflow: hidden;
+}
+#scoreboard {
+  position: absolute;
+  top: 0px;
+  font-family: Impact;
+  font-size: xxx-large;
+  color: rgb(234, 0, 255);
+  user-select: none;
+  z-index: 3;
+  margin-top: 15px;
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menuBird {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+#best {
+  font-family: Phosphate;
+  color: green;
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#gameTitle {
+  font-family: Phosphate;
+  color: blue;
+  font-size: xx-large;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+#newBest {
+  font-family: Phosphate;
+  color: forestgreen;
+  font-size: xxx-large;
+  margin: 20px;
+}
+.bigButton {
+  background-color: white;
+  border: solid 2px fuchsia;
+  font-family: Verdana;
+  color: purple;
+  font-size: larger;
+  cursor: pointer;
+  margin: 5px;
+  width: 150px;
+}
+.bigButton:hover {
+  border: solid 2px orangered;
+  color: orangered;
+}
+.smallHeader {
+  font-family: Verdana;
+  margin-top: 18.7px;
+  margin-bottom: 18.7px;
+  font-weight: bold;
+}
+.selection {
+  background-color: white;
+  border: none;
+  font-family: Verdana;
+  color: blue;
+  cursor: pointer;
+  font-size: small;
+}
+.selection:hover {
+  color: fuchsia;
+}
+#leaderboardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90px;
+}
+#rightColumn {
+  width: 40px;
+}
+.record {
+  font-family: Verdana;
+  font-variant: small-caps;
+  margin: 3px;
+  font-size: small;
+}
+#formContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4px;
+}
+#textbox {
+  border: solid 1px blue;
+  border-radius: 0;
+  font-size: small;
+}
+#sendButton {
+  border: solid 1px orangered;
+  background-color: white;
+  font-family: Verdana;
+  font-size: small;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-variant: small-caps;
+  border-radius: 0;
+  margin-left: 4px;
+  cursor: pointer;
+}
+#sendButton:hover {
+  border: solid 1px fuchsia;
+}
+.validationMessage {
+  font-family: Verdana;
+  font-size: smaller;
+  color: red;
+  margin: 4px;
+}
+#backButton {
+  font-family: Verdana;
+  font-size: smaller;
+  font-variant: small-caps;
+  text-decoration: underline;
+  margin: 0;
+  color: blue;
+  cursor: pointer;
+}
+#addBird {
+  width: 300;
+  font-size: small;
+  font-family: Verdana;
+  background-color: white;
+  font-variant: small-caps;
+  margin-top: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+  color: purple;
+  border: solid 1px green;
+}
+#addBird:hover {
+  border-color: blue;
+  color: orangered
+}
+#uploadRow {
+  display: flex;
+  flex-direction: row;
+}
+.uploadedImage {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  object-fit: contain;
+}
+.fileInstruction {
+  margin: 0;
+  font-family: Verdana;
+  font-size: small;
+  color: maroon;
+}
+#fileButton {
+  width: 250px;
+  margin-top: 10px;
+  border: solid 1px teal;
+  background-color: white;
+  border-radius: 4px;
+  font-size: small;
+  border-left: none;
+}
+#urlRow {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-size: small;
+}
+#urlRow button{
+  border: solid 1px black;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  width: 84px;
+}
+#urlRow button:hover{
+  background-color: #dddddd;
+}
+#urlRow button:active{
+  background-color: #ededed;
+}
+#uploadURL {
+  width: 166px;
+  border: solid 1px teal;
+  border-radius: 4px;
+  font-size: small;
+}
+#uploadHeader {
+  margin-top: 0;
+}
+#newName {
+  width: 250px;
+  border-radius: 4px;
+  border: solid 1px green;
+  font-size: small;
+}
+#confirmationRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.confButton {
+  background-color: white;
+  border-radius: 0;
+  border: solid 1px blue;
+  font-family: Verdana;
+  color: blue;
+  cursor: pointer;
+  margin: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: small;
+}
+.confButton:hover {
+  border-color: fuchsia;
+  color: orangered;
+}
+#addedMessage {
+  font-size: small;
+  font-family: Verdana;
+  color: green;
+}
+.secret {
+  font-family: Verdana;
+  color: white;
+  text-align: center;
+}
+#instructionIcon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#instructionIcon:hover {
+  transform: scale(1.08);
+}
+#instructionBox {
+  position: absolute;
+  width: 156px;
+  height: 45px;
+  border: solid 1px blueviolet;
+  right: 40px;
+  bottom: 40px;
+  padding: 3px;
+  user-select: none;
+  background-color: white;
+  z-index: 5;
+}
+#instructionText {
+  font-family: Verdana;
+  font-size: small;
+  margin: 0;
+  user-select: none;
+}
+#githubLogo {
+  position: absolute;
+  bottom: 54px;
+  right: 2px;
+  width: 50px;
+  height: 50px;
+}
+#githubLogo:hover {
+  transform: scale(1.08);
+}
