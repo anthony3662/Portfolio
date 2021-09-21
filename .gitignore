@@ -4,6 +4,7 @@
 # dist/*
 # !dist/index.html
 node_modules/
+Portfolio.pem
 # *.log
 
 # OS generated files
