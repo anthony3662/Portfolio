@@ -156,7 +156,7 @@ export default function Work() {
                 <li>- HTML/CSS</li>
               </ul>
             }
-            <a href="https://github.com/anthony3662/sdc" target="_blank">
+            <a href="https://github.com/anthony3662/Portfolio" target="_blank">
               <img className="pl-2 workGithubLogo" src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png"/>
             </a>
           </WorkTextbox>
